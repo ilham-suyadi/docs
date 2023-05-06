@@ -2,8 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/docs/',
-  outDir: "docs/.vitepress/config.js__..public",
+  base: '/',
   title: "Ilham Suyadi",
   description: "My Documentation",
   themeConfig: {
