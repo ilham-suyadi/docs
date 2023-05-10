@@ -14,10 +14,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Docs',
+        text: 'Kubernetes',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
+          { text: 'Deployment', link: '/kubernetes/deployment' },
+          { text: 'green and Blue deployment', link: '/kubernetes/deployment' },
+          { text: 'ingress nginx', link: '/kubernetes/ingress' }
         ]
       }
     ]
