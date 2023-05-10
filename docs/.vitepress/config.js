@@ -16,13 +16,45 @@ export default defineConfig({
       {
         text: 'Kubernetes',
         items: [
-          { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
-          { text: 'Deployment', link: '/kubernetes/deployment' },
-          { text: 'Metrics Server', link: '/kubernetes/metric' },
-          { text: 'green and Blue deployment', link: '/kubernetes/deployment' },
-          { text: 'ingress nginx', link: '/kubernetes/ingress' }
+
+          { text: 'ingress nginx', link: '/kubernetes/ingress' },
+          {
+            text: 'Basic',
+            collapsed: true,
+            items: [
+              { text: 'Deployment', link: '/kubernetes/deployment' },
+            ],
+          },
+          {
+            text: 'Monitoring',
+            collapsed: true,
+            items: [
+              { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
+              { text: 'Metrics Server', link: '/kubernetes/metric' },
+            ],
+          },
+          {
+            text : 'Deployment Advanced',
+            collapsed: true,
+            items: [
+              { text: 'green and Blue deployment', link: '/kubernetes/green_blue_deployment' },
+            ]
+          }
         ]
       }
     ]
+
+    // sidebar: [
+    //   {
+    //     text: 'Kubernetes',
+    //     items: [
+    //       { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
+    //       { text: 'Deployment', link: '/kubernetes/deployment' },
+    //       { text: 'Metrics Server', link: '/kubernetes/metric' },
+    //       { text: 'green and Blue deployment', link: '/kubernetes/deployment' },
+    //       { text: 'ingress nginx', link: '/kubernetes/ingress' }
+    //     ]
+    //   }
+    // ]
   }
 })
