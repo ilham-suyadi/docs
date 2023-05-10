@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r}from"./chunks/framework.40c943bf.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"kubernetes/metric.md","filePath":"kubernetes/metric.md"}'),a={name:"kubernetes/metric.md"};function c(s,n,o,i,m,p){return t(),r("div")}const f=e(a,[["render",c]]);export{d as __pageData,f as default};

@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as n}from"./chunks/framework.40c943bf.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"kubernetes/deployment.md","filePath":"kubernetes/deployment.md"}'),o={name:"kubernetes/deployment.md"};function r(a,s,c,p,d,m){return t(),n("div")}const i=e(o,[["render",r]]);export{_ as __pageData,i as default};

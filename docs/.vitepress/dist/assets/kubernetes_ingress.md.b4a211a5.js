@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as s}from"./chunks/framework.40c943bf.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"kubernetes/ingress.md","filePath":"kubernetes/ingress.md"}'),r={name:"kubernetes/ingress.md"};function n(a,o,c,i,p,_){return t(),s("div")}const f=e(r,[["render",n]]);export{m as __pageData,f as default};
