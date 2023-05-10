@@ -70,8 +70,11 @@
    kubectl -n kubernetes-dashboard create token admin-user
    ```
 
-</br>
+<br>
+<br>
+
 :link: Referensi :
-dashboard instalation: <https://adamtheautomator.com/kubernetes-dashboard/>
-</br>
-token generator : <https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md>
+
+<https://adamtheautomator.com/kubernetes-dashboard>
+
+<https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md>
