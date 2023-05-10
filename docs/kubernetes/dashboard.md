@@ -36,7 +36,7 @@
 
    > add config
 
-   ```sh
+   ```yml
     ---
     apiVersion: v1
     kind: ServiceAccount
