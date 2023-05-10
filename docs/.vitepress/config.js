@@ -3,20 +3,25 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
+  // lastUpdated: true,
+  search: {
+    provider: 'local'
+  },
   title: "Ilham Suyadi",
   description: "My Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'kubernetes', link: '/kubernetes/' }
+      { text: 'kubernetes', link: '/kubernetes/', activeMatch: '/kubernetes/'},
+      { text: 'docker', link: '/docker/', activeMatch: '/docker/'}
     ],
 
-    sidebar: [
-      {
+    sidebar: {
+      '/kubernetes/' : [
+        {
         text: 'Kubernetes',
         items: [
-
           { text: 'ingress nginx', link: '/kubernetes/ingress' },
           {
             text: 'Basic',
@@ -37,24 +42,22 @@ export default defineConfig({
             text : 'Deployment Advanced',
             collapsed: true,
             items: [
-              { text: 'green and Blue deployment', link: '/kubernetes/green_blue_deployment' },
+              { text: 'Green-Blue', link: '/kubernetes/green_blue_deployment' },
             ]
           }
         ]
-      }
-    ]
-
-    // sidebar: [
-    //   {
-    //     text: 'Kubernetes',
-    //     items: [
-    //       { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
-    //       { text: 'Deployment', link: '/kubernetes/deployment' },
-    //       { text: 'Metrics Server', link: '/kubernetes/metric' },
-    //       { text: 'green and Blue deployment', link: '/kubernetes/deployment' },
-    //       { text: 'ingress nginx', link: '/kubernetes/ingress' }
-    //     ]
-    //   }
-    // ]
+        }
+      ],
+      
+      '/docker/' : [
+        {
+        text: 'docker',
+        items: [
+          { text: 'index', link: '/docker/' },
+          { text: 'docker', link: '/docker/about' }
+        ]
+        }
+      ]
+    }
   }
 })

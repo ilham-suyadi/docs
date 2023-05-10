@@ -6,5 +6,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --port 8080"
+  },
+  "dependencies": {
+    "fuzzy": "^0.1.3"
   }
 }

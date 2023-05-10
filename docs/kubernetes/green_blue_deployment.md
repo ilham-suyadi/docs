@@ -1,8 +1,8 @@
 # Green Blue Deployment
 
-## Summary
-
+::: details
 mengarahkan service ke deployment versi yang terbaru.
+:::
 
 ## Deploy app v1
 
