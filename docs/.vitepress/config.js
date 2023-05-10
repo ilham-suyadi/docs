@@ -18,6 +18,7 @@ export default defineConfig({
         items: [
           { text: 'Kubernetes Dashboard', link: '/kubernetes/dashboard' },
           { text: 'Deployment', link: '/kubernetes/deployment' },
+          { text: 'Metrics Server', link: '/kubernetes/metric' },
           { text: 'green and Blue deployment', link: '/kubernetes/deployment' },
           { text: 'ingress nginx', link: '/kubernetes/ingress' }
         ]
