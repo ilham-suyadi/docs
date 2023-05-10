@@ -10,6 +10,9 @@ export default defineConfig({
   title: "Ilham Suyadi",
   description: "My Documentation",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
