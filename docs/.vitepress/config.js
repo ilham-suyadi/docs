@@ -21,6 +21,9 @@ export default defineConfig({
       { text: 'Docker', link: '/docker/', activeMatch: '/docker/'},
       { text: 'Infrastructure as Code', link: '/infrastructure-as-code/', activeMatch: '/infrastructure-as-code/'}
     ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/ilham-suyadi/docs' }
+    ],
 
     sidebar: {
       '/kubernetes/' : [
