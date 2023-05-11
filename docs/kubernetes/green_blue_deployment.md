@@ -15,7 +15,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  green-blue-v1
-  namespace: devops
   labels:
     app:  green-blue
 spec:
@@ -42,7 +41,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: green-blue
-  namespace: devops
   labels:
     app: green-blue
 spec:
@@ -57,12 +55,15 @@ spec:
 
 ## Deploy app v2
 
+```sh
+
+```
+
 ```yml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: green-blue-v2
-  namespace: devops
   labels:
     name: green-blue
 spec:
@@ -80,4 +81,27 @@ spec:
       containers:
       - name: green-blue-nginx
         image: nginx:alpine
+```
+
+## arahkan service ke deployment versi ke 2
+
+```sh
+kubectl edit svc green-blue
+```
+
+```yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: green-blue
+  labels:
+    app: green-blue
+spec:
+  selector:
+    app: green-blue
+    version: v2
+  ports:
+  - port: 80
+    targetPort: 80
+  type: NodePort
 ```

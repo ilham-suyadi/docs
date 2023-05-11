@@ -16,8 +16,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'kubernetes', link: '/kubernetes/', activeMatch: '/kubernetes/'},
-      { text: 'docker', link: '/docker/', activeMatch: '/docker/'}
+      { text: 'CI/CD', link: '/ci-cd/', activeMatch: '/ci-cd/'},
+      { text: 'Kubernetes', link: '/kubernetes/', activeMatch: '/kubernetes/'},
+      { text: 'Docker', link: '/docker/', activeMatch: '/docker/'},
+      { text: 'Infrastructure as Code', link: '/infrastructure-as-code/', activeMatch: '/infrastructure-as-code/'}
     ],
 
     sidebar: {

@@ -5,21 +5,36 @@ layout: home
 hero:
   name: "Ilham Suyadi"
   text: "My Documentation"
-  tagline: My great project tagline
   actions:
     - theme: brand
-      text: Kubernetes
-      link: /kubernetes
+      text: CI/CD
+      link: /markdown-examples
     - theme: alt
+      text: Kubernetes
+      link: /api-examples
+    - theme: brand
       text: Docker
-      link: /docker
+      link: /api-examples
+    - theme: alt
+      text: Infrastructure as Code
+      link: /api-examples
 
 features:
-  - title: Feature A
+  - title: CI/CD
+    icon:
+       src: /git.svg
+    details: lorem ipsum
+  - title: Kubernetes
+    icon:
+       src: /kubernetes.svg
+    details: lorem
+  - title: Docker
+    icon:
+       src: /docker.svg
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Infrastructure as Code
+    icon:
+       src: /iac.png
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
