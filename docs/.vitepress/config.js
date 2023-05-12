@@ -50,7 +50,7 @@ export default defineConfig({
             text : 'Deployment Advanced',
             collapsed: true,
             items: [
-              { text: 'Green-Blue', link: '/kubernetes/green_blue_deployment' },
+              { text: 'Blue Green', link: '/kubernetes/blue_green_deployment' },
             ]
           }
         ]
