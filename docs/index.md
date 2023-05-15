@@ -23,18 +23,14 @@ features:
   - title: CI/CD
     icon:
        src: /git.svg
-    details: lorem ipsum
   - title: Kubernetes
     icon:
        src: /kubernetes.svg
-    details: lorem
   - title: Docker
     icon:
        src: /docker.svg
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Infrastructure as Code
     icon:
        src: /iac.png
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

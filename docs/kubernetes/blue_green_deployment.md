@@ -142,6 +142,17 @@ kubectl edit svc blue-green-svc
 
 <!-- ![blue-green-deployment.png](./blue-green-deployment.png) -->
 
+## scale down deployment v1
+
+1. scale berguna untuk menentukan jumlah pod yang bisa di gunakan, jika mengatur scale ke 0, maka tidak ada pod yang tersedia atau aplikasi dalam keadaan mati
+
+```sh
+kubectl -n devops scale deploy green-blue-v2 --replicas=0
+```
+
+<br>
+<br>
+
 :link: Referensi:
 
 <https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html>

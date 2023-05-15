@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
   // lastUpdated: true,
@@ -13,7 +12,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'CI/CD', link: '/ci-cd/', activeMatch: '/ci-cd/'},
@@ -26,11 +24,18 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/ci-cd/' : [
+        {
+          text: 'CI/CD',
+          items: [
+            { text: 'Git', link: '/ci-cd/git'},
+          ]
+        }
+      ],
       '/kubernetes/' : [
         {
         text: 'Kubernetes',
         items: [
-          { text: 'ingress nginx', link: '/kubernetes/ingress' },
           {
             text: 'Basic',
             collapsed: true,
@@ -50,7 +55,18 @@ export default defineConfig({
             text : 'Deployment Advanced',
             collapsed: true,
             items: [
-              { text: 'Blue Green', link: '/kubernetes/blue_green_deployment' },
+              { text: 'Blue Green deployment', link: '/kubernetes/blue_green_deployment' },
+              { text: 'Canary Deployment', link: '/kubernetes/canary' },
+              { text: 'Rollingout deployment', link: '/kuberntes/'}
+            ]
+          },
+          {
+            text : 'Other',
+            collapsed: true,
+            items: [
+              { text: 'K9s', link: '/kubernetes/k9s' },
+              { text: 'HA Proxy', link: '/kubernetes/ha_proxy' },
+              { text: 'ingress nginx', link: '/kubernetes/ingress' },
             ]
           }
         ]
