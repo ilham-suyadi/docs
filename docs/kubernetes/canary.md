@@ -5,7 +5,7 @@
 canary deployment adalah teknik perilisan secara bertahap, yaitu dengan cara menyebar atau meluncurkan beberapa pod yang terbaru ke beberapa pengguna terlebih dahulu.
 jika aplikasi mengalami masalah, maka tidak semua pengguna kena dampaknya.
 
-## Deploy apps v1
+## Deploy Apps v1
 
 1. buat file canary-v1.yml untuk mendeploy aplikasi v1
   
@@ -44,7 +44,7 @@ spec:
 kubectl apply -f canary-v1.yml
 ```
 
-## Create service
+## Create Service
 
 1. buat file canary-service.yml untuk membuat service
 
@@ -70,7 +70,7 @@ spec:
   type: NodePort
 ```
 
-3. terapkan file blue-green-service dengan perintah
+3. terapkan file canary-service dengan perintah
 
 ```sh
 kubectl apply -f canary-service.yml
@@ -82,7 +82,7 @@ kubectl apply -f canary-service.yml
 kubectl get svc canary-service
 ```
 
-## deploy apps V2
+## Deploy Apps V2
 
 1. buat file canary-v2.yml untuk mendeploy aplikasi v2
 
@@ -115,10 +115,10 @@ spec:
         imagePullPolicy: Always
 ```
 
-3. terapkan file blue-green-v1 tersebut dengan perintah
+3. terapkan file canary-v2 tersebut dengan perintah
 
 ```sh
-kubectl apply -f blue-green-v2.yml
+kubectl apply -f canary-v2.yml
 ```
 
 ## Pengujian

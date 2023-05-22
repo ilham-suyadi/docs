@@ -5,7 +5,7 @@
 deployment biru/hijau adalah strategi deployment di mana Anda membuat dua deployment  yang terpisah namun identik, yang membedakan satu sama lain ada di versinya.
 Satu lingkungan (biru) menjalankan versi aplikasi saat ini dan satu lingkungan (hijau) menjalankan versi aplikasi baru. Setelah pengujian selesai pada lingkungan hijau, lalu lintas aplikasi langsung diarahkan ke lingkungan hijau dan lingkungan biru tidak digunakan lagi.
 
-## Deploy aplikasi v1
+## Deploy Aplikasi v1
 
 1. buat file blue-green-v1 untuk mendeploy aplikasi v1
 
@@ -88,7 +88,7 @@ kubectl get svc blue-green-svc
 
 untuk mengetes aplikasi versi 1 dan service bisa menggunakan terminal dengan perintah ***curl localhost:(nodeport)***, atau bisa menggunakan browser dengan mengakses ip dari node dimana aplikasi berjalan ***examples:*** *192.68.1.202:(nodeport)*.
 
-## Deploy app v2
+## Deploy App v2
 
 1. buat file blue-green-v2 untuk mendeploy aplikasi v2
 

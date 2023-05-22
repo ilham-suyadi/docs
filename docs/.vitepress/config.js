@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+
+
 export default defineConfig({
   base: '/',
   // lastUpdated: true,
@@ -14,13 +16,27 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'CI/CD', link: '/ci-cd/', activeMatch: '/ci-cd/'},
+      // { text: 'CI/CD', link: '/ci-cd/', activeMatch: '/ci-cd/'},
+      {
+        text: 'CI/CD',
+        items: [
+          {text: 'Git', link: '/git/', activeMatch: '/git/'},
+          { text: 'Gitlab', link: '/gitlab/', activeMatch: '/gitlab/' },
+          { text: 'Github', link: '/github/', activeMatch: '/github/'}
+        ]
+      },
       { text: 'Kubernetes', link: '/kubernetes/', activeMatch: '/kubernetes/'},
       { text: 'Docker', link: '/docker/', activeMatch: '/docker/'},
-      { text: 'Infrastructure as Code', link: '/infrastructure-as-code/', activeMatch: '/infrastructure-as-code/'}
+      { text: 'Infrastructure as Code',
+        items: [
+          { text: 'Terraform', link: '/terraform/', activeMatch: '/terraform/'},
+          { text: 'Ansible', link: '/ansible/', activeMatch: '/ansible/'}
+        ]
+    }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ilham-suyadi/docs' }
+      { icon: 'github', link: 'https://github.com/ilham-suyadi/docs' },
+      { icon: 'github', link: 'https://github.com/ilham-suyadi/docs/issues' }
     ],
 
     sidebar: {
@@ -57,7 +73,16 @@ export default defineConfig({
             items: [
               { text: 'Blue Green deployment', link: '/kubernetes/blue_green_deployment' },
               { text: 'Canary Deployment', link: '/kubernetes/canary' },
-              { text: 'Rollingout deployment', link: '/kuberntes/'}
+              { text: 'Rollingout deployment', link: '/kuberntes/'},
+              { text: 'Kubernetes Network Policy', link: '/kubernetes/networkPolicy'},
+              { text: 'Cert Manager' , link: '/kubernetes/cert-manager'}
+            ]
+          },
+          {
+            text: 'Storage',
+            collapsed: true,
+            items: [
+              { text: 'Rook Ceph', link: '/kubernetes/rook-ceph-kubectl' }
             ]
           },
           {

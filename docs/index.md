@@ -8,16 +8,16 @@ hero:
   actions:
     - theme: brand
       text: CI/CD
-      link: /markdown-examples
+      link: /git/
     - theme: alt
       text: Kubernetes
-      link: /api-examples
+      link: /Kubernetes
     - theme: brand
       text: Docker
-      link: /api-examples
+      link: /Docker/
     - theme: alt
       text: Infrastructure as Code
-      link: /api-examples
+      link: /ansible/
 
 features:
   - title: CI/CD
