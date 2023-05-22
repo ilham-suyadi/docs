@@ -11,10 +11,10 @@ hero:
       link: /git/
     - theme: alt
       text: Kubernetes
-      link: /Kubernetes
+      link: /kubernetes/
     - theme: brand
       text: Docker
-      link: /Docker/
+      link: /docker/
     - theme: alt
       text: Infrastructure as Code
       link: /ansible/

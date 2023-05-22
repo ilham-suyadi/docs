@@ -19,6 +19,10 @@ spec:
   - Ingress
 ```
 
+:::info
+script di atas akan mengatur semua pod yang berada di namespace(default) agar tidak bisa diakses oleh siapa pun termasuk pod yang ada di dalam namespace, tetapi pod yang di namaspace tersebut masih bisa mengakses pod yang ada di luar
+:::
+
 ## izinkan semua trafik ingress
 
 ```yaml
@@ -34,6 +38,10 @@ spec:
   - Ingress
 ```
 
+:::info
+sebenarnya ini tidak ada perbedaan dengan default atau tanpa configurasi network policy yang dimana semuanya bisa mengakses ataupun di akses
+:::
+
 ## Tolak Semua Trafik Egress
 
 ```yaml
@@ -46,6 +54,10 @@ spec:
   policyTypes:
   - Egress
 ```
+
+:::info
+script di atas akan mengatur semua pod yang berada di namespace(default) bisa diakses oleh siapa pun, tetapi pod yang berada di namespace tidak bisa mengakses keluar
+:::
 
 ## izinkan semua trafik egress
 
@@ -62,6 +74,10 @@ spec:
   - Egress
 ```
 
+:::info
+sebenarnya ini tidak ada perbedaan dengan default atau tanpa configurasi network policy yang dimana semuanya bisa mengakses ataupun di akses
+:::
+
 ## tolak semua trafik ingress dan egress
 
 ```yaml
@@ -75,6 +91,10 @@ spec:
   - Ingress
   - Egress
 ```
+
+:::info
+file di atas mungatur semua pod yang berada di namaspace tidak bisa diakses maunpun mengakses pod lain
+:::
 
 ## mengizinkan pods tertentu yang berada di dalam namespace tertentu yang hanya bisa mengakses secara ingress dan egress
 
@@ -109,6 +129,10 @@ spec:
           role: db
 ```
 
+:::info
+perintah di atas mengatur semua pod yang ada di namespace ***test1*** yang memiliki labels ***role: db***, bisa di akses ataupun mengakses pod yang berada di namaspace ***test2*** yang memiliki labels ***role: db***.
+:::
+
 ## bisa mengakses semua pods/apps tapi hanya bisa diakses pods/apps tertentu
 
 ```yaml
@@ -130,13 +154,13 @@ spec:
           role: np
 ```
 
-> ***Penjelasan :*** Network Policy ini mengatur pod yang memiliki label <u> *role: db* </u> yang berada di <u> *namespace: test1* </u>, yang hanya bisa mengakses dan di akses oleh pod dengan label <u> *role: db* </u> yang berada di <u> *namespace: test2* </u>
+:::info
+Network Policy ini mengatur pod yang memiliki label ***role: db*** yang berada di ***namespace: test1*** , yang hanya bisa mengakses dan di akses oleh pod dengan label ***role: db*** yang berada di ***namespace: test2***
+:::
 
 <br>
 <br>
 
-:link: Referensi:
-
-<https://kubernetes.io/id/docs/concepts/services-networking/network-policies/#default-tolak-semua-trafik-egress>
-
+:link: Referensi: \
+<https://kubernetes.io/id/docs/concepts/services-networking/network-policies/#default-tolak-semua-trafik-egress> \
 <https://snyk.io/blog/kubernetes-network-policy-best-practices/>
