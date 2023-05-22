@@ -74,7 +74,7 @@ export default defineConfig({
               { text: 'Blue Green deployment', link: '/kubernetes/blue_green_deployment' },
               { text: 'Canary Deployment', link: '/kubernetes/canary' },
               { text: 'Rollingout deployment', link: '/kuberntes/'},
-              { text: 'Kubernetes Network Policy', link: '/kubernetes/networkPolicy'},
+              { text: 'Kubernetes Network Policy', link: '/kubernetes/networkpolicy'},
               { text: 'Cert Manager' , link: '/kubernetes/cert-manager'}
             ]
           },
