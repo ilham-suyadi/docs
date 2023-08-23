@@ -57,7 +57,7 @@ output "centos_terrafrom_ipaddr" {
  }
 ```
 
-![script kedua](assets/script%20kedua.png)
+<!-- ![script kedua](assets/script%20kedua.png) -->
 
 > name output: adalah nama dari output, kalian bebas memberi nama apapun.
 > name domain: adalah nama dari domain yang kalian gunakan di script, untuk count index itu urut dari 0 sampai seterusnya, atau kalian dapat menggunakan terraform state list, dengan catatan kalian sudah apply script terraform
@@ -89,7 +89,7 @@ output "centos_terrafrom_ipaddr" {
  }
 ```
 
-![script ketiga](/assets/script%20ketiga.png)
+<!-- ![script ketiga](/assets/script%20ketiga.png) -->
 
 > name output: adalah nama dari output, kalian bebas memberi nama apapun.
 > name domain: adalah nama dari domain yang kalian gunakan di script, nah di script kedua kita menggunakan nomer count index, tapi di script ketiga kita tidak perlu nomor dari count index, tapi kita ganti dengan bintang (*), untuk nama domain dengan bintang dipisahkan oleh tanda titik (.).
@@ -124,7 +124,7 @@ output "ip" {
  }
 ```
 
-![script keempat](/assets/script%20keempat.png)
+<!-- ![script keempat](/assets/script%20keempat.png) -->
 
 > name output: adalah nama dari output, kalian bebas memberi nama apapun.
 > name domain: adalah nama dari domain yang kalian gunakan di script
