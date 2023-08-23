@@ -30,4 +30,19 @@ git push -u (name remote) (name branch)
 >git push -u origin dev
 >```
 
-## Git tag 
+## Git tag
+
+## Git Change Commit
+
+```sh
+git commit --amend 
+```
+
+## Combine Multiple Git Commits into One
+
+```sh
+git rebase -i HEAD~
+```
+
+:link: Referensi:\
+<https://prasad-k-pawar.medium.com/how-to-combine-multiple-git-commits-into-one-c04c67367a36>\
